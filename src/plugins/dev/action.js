@@ -106,7 +106,7 @@ module.exports = function (command) {
       console.log(chalk.green(config.watch[i]));
     }
 
-    let execCommand = 'npm --registry=http://registry.npm.qima-inc.com outdated ';
+    let execCommand = 'npm --registry=https://registry.npm.taobao.org outdated ';
     const projectConfig = Util.getProjectConfig();
     if (projectConfig.versionValid && Array.isArray(projectConfig.versionValid)) {
       execCommand += projectConfig.versionValid.join(' ');
