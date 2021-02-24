@@ -21,8 +21,8 @@ module.exports = function(command) {
     shell.exit(-1);
   }
   result = shell.cp("./config/*.json", "./dist/config");
-  if (result.code !== 0) {
-    shell.exit(-1);
-  }
+  // if (result.code !== 0) {
+  //   shell.exit(-1);
+  // }
   console.log("========== 结束文件拷贝 ==========");
 };
